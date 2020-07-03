@@ -8,22 +8,28 @@
 </head>
 <body>
     <style>
+        /* 明確性越高優先權越高 */
         p {
-            color: blue;
+            color: blue !important;
             background-color: coral;
         }
         .info{
             color:yellow;
         }
+        #firstP{
+            color: brown;
+        }
         h1.info{
             color: blueviolet;
         }
+        
     </style>
     <!-- 選取之後 ctrl+d (可以選到其他一樣的) -->
     <h1 class="info">title</h1>
     <!-- inline style -->
-    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam officia at itaque aspernatur repudiandae, est corporis repellendus quae aperiam veritatis nam esse a nobis consectetur odit rem nostrum facilis.</p>
+    <p class="info box" id="firstP" style="color: rgb(7, 89, 92);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam officia at itaque aspernatur repudiandae, est corporis repellendus quae aperiam veritatis nam esse a nobis consectetur odit rem nostrum facilis.</p>
     <h2 >sub title</h2>
+    <img src="https://picsum.photos/id/1058/600/400" alt="">
     <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam officia at itaque aspernatur repudiandae, est corporis repellendus quae aperiam veritatis nam esse a nobis consectetur odit rem nostrum facilis.</p>
     <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam officia at itaque aspernatur repudiandae, est corporis repellendus quae aperiam veritatis nam esse a nobis consectetur odit rem nostrum facilis.</p>
 </body>
