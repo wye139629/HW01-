@@ -10,7 +10,7 @@
             padding: 0;
             list-style: none;
         }
-        div{
+        .ch{
             width: 200px;
             background-color: #ccc;
             border: 5px solid rgb(230, 46, 46);
@@ -29,13 +29,25 @@
             /* 強迫英文單字折行 */
             word-break:break-all;
         }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin: 10px;
+        }
+        .box1 + div{
+            outline: 10px solid blue;
+        }
+       
     </style>
 </head>
 <body>
-    <div>
+    <div class="ch">
         顯卡房屋經歷高校隨着配件小說很多人說是，代理浪漫，加入時間。代理浪漫，加入時間。代理浪漫，加入時間。代理浪漫，加入時間。
     </div>
     <!-- 英文單字無法折行會導致超出content-box-->
     <div class="eng">lolooooooooooooooooooooooooooooooooooooooooooo</div>
+    <div class="box1"></div>
+    <div class="box2"></div>
 </body>
 </html>
