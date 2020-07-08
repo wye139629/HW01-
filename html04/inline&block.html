@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+        li{
+            background-color: blueviolet;
+        }
+        .list{
+            margin-left: 30px;
+        }
+        .list-item{
+            display: list-item;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+        em{
+            background-color: burlywood;
+            /* inline margin 上下不支援 */
+            margin-top:40px;
+            margin-bottom:40;
+            /* ----------------------- */
+            margin-right:40px;
+            margin-left:40px;
+            /* inline padding 上下不支援 */
+            padding-top: 50px;
+            padding-bottom: 40px;
+            /* ------------- */
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 圖片是inline -->
+    <img src="https://picsum.photos/id/684/50/50" alt="">圖片很胖
+    <div>div</div>
+    <p>p</p>
+    <nav>nav</nav>
+    <ul>ul 
+        <li>li</li>
+    </ul>
+    <article>article</article>
+    <section>section </section>
+    <aside>aside</aside>
+    <strong>strong</strong>
+    <span>span</span><span>span2</span>
+    <em>em</em>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quae laboriosam exercitationem est veniam, at fugit aut reiciendis aliquid aliquam quod minima, perferendis deserunt, reprehenderit magni. Praesentium pariatur fugit impedit.</p>
+
+    <div class="list">
+        <div class="list-item">ooxx</div>
+        <div class="list-item">ooxx</div>
+        <div class="list-item">ooxx</div>
+        <div class="list-item">ooxx</div>
+        <div class="list-item">ooxx</div>
+    </div>
+    <button>button</button>
+</body>
+</html>
