@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .wrap{
+        width: 1200px;
+        display: flex;
+        background-color: #ccc;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        border: 2px solid red;
+        font-size: 50px;
+        background-color: orange;
+        
+    }
+    .item1{
+        flex-grow: 1;
+        order: 0;
+        
+    }
+    .item2{
+        /* 分配主軸的剩餘空間 */
+        /* 只能用在不換列 */
+        flex-grow: 1; 
+        order: -1;
+    }
+    .item3{
+        flex-grow: 1;
+        order: -2;
+    }
+    .item4
+</style>
+<body>
+    <div class="wrap">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item3">4</div>
+        <div class="item item3">5</div>
+    </div>
+</body>
+</html>
