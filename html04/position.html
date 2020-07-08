@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            font-size: 0;
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: inline-block;
+            font-size: 50px;
+            margin: 5px;
+        }
+        li:nth-child(18){
+            background-color: red;
+            position: relative;
+            bottom: 40px;
+            right: 40px;
+            left: 30px;
+            top:30px;
+            /* 以左邊跟上面為基準 所以會優先權大於右下 */
+        }
+        li:nth-child(12){
+            position: relative;
+        }
+        li:nth-child(24){
+            position: relative;
+        }
+        /* html結構上後面的標籤設定relative後層會蓋過前面 */
+        li:nth-child(16){
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+        <li>34</li>
+        <li>35</li>
+        <li>36</li>
+        <li>37</li>
+        <li>38</li>
+        <li>39</li>
+        <li>40</li>
+        <li>41</li>
+        <li>42</li>
+        <li>43</li>
+        <li>44</li>
+        <li>45</li>
+        <li>46</li>
+        <li>47</li>
+        <li>48</li>
+        <li>49</li>
+        <li>50</li>
+    </ul>
+</body>
+</html>
