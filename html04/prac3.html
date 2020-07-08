@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .item{
+            width: 200px;
+            height: 300px;
+            position: relative;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+        .item img{
+            width: 100%;
+            height: 200px;
+            
+        }
+        .item .discount{
+            /* width: 25px;
+            height: 25px; */
+            padding: 5px;
+            font-size: 10px;
+            position: absolute;
+            background-color: yellow;
+            top: 5px;
+            right: 0;
+        }
+        .item .on-sale{
+            /* width: 60px;
+            height: 25px; */
+            color: white;
+            padding: 5px 10px;
+            font-size: 13px;
+            position: absolute;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: orange;
+            top: 5px;
+            left: -10px;
+        }
+        .item .on-sale::before{
+            content: '';
+            /* width: 0;
+            height: 0; */
+            /* display: block; */
+            border-top: 10px solid rgb(134, 88, 1);
+            /* border-bottom: 10px solid transparent; */
+            border-left: 10px solid transparent;
+            /* border-right: 0px solid pink; */
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        .tri{
+            width: 0;
+            height: 0;
+            border-top: 20px solid red;
+            border-right: 20px solid yellow;
+            border-bottom: 20px solid blue;
+            border-left: 20px solid green;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .item .discount::after{
+            content: '';
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="discount">3.8折</div>
+            <div class="on-sale">蝦皮優惠</div>
+            <img src="https://picsum.photos/id/684/600/400" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisiciitatibus eus reiciendis maiores a
+    </div>
+    <div class="tri"></div>
+</body>
+</html>
