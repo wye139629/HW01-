@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+            list-style: none;
+        }
+        .item{
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+            display: inline-block;
+            /* margin: 0px 10px; */
+            margin-bottom: 20px;
+        }
+       .i1{
+           font-size: 18px;
+       }
+        
+        .wrap{
+            background-color: burlywood;
+            text-align: center;
+            font-size: 0;
+        }
+        .i3+.i3{
+            margin-left: -4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item i1">item</div>
+        <div class="item i1">item</div>
+        <div class="item i1">item</div>
+    </div>
+    <div class="wrap2">
+        <div class="item">item</div><div class="item">item</div><div class="item">item</div>
+    </div>
+    <div class="wrap3">
+        <div class="item i3">item</div> 
+        <div class="item i3">item</div>
+        <div class="item i3">item</div>
+    </div>
+    <div class="wrap4">
+        <div class="item">item</div><!-- 
+     --><div class="item">item</div><!-- 
+     --><div class="item">item</div>
+    </div>
+</body>
+</html>
